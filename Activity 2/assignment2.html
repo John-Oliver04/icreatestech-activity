@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Assignment</title>
+    <style>
+        .contact-form{
+            width: 600px;
+            border: 2px solid gray; 
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(149, 140, 140);
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+
+        }
+        .login-form{
+            width: 600px;
+            border: 2px solid gray; 
+            margin-top: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(149, 140, 140);
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        .survey-form{
+            width: 600px;
+            border: 2px solid gray; 
+            margin-top: 1200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgb(149, 140, 140);
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        input{
+            width: 100%;
+            height: 30px;
+        }
+        textarea{
+            width: 100%;
+        }
+        h1{
+            text-align: center;
+        }
+        .my-10{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .gender{
+
+        }
+    </style>
+</head>
+<body>
+    <!-- contact form -->
+    <form class="contact-form" method="post" action="#">
+        <!-- header -->
+        <h1>Contact Us</h1>
+
+        <!-- input name -->
+        <div class="my-10">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id=""/> 
+        </div>
+        <!-- input email -->
+        <div class="my-10">
+            <label for="email">Email:</label>
+            <input type="email" name="name" id=""/>
+        </div>
+        <!-- input message -->
+        <div class="my-10">
+            <label for="message">Message:</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <!-- submit button -->
+        <input type="submit" value="Submit">
+    </form>
+    <form class="login-form" action="#" method="post">
+        <h1>Login</h1>
+        <div class="my-10">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="">
+        </div>
+        <div class="my-10">
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="">
+        </div>
+        <input type="submit" value="Login">
+    </form>
+
+    <form class="survey-form" action="#" method="post">
+        <h1>Survey</h1>
+        <div class="my-10">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="">
+        </div>
+        <div class="my-10">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="">
+        </div>
+        <br>
+        <div class="my-10 gender">
+            <label for="gender">Gender:</label>
+            <label for="male">
+                <input style="width: 20px; height:10px;" type="radio" name="gender" id="male" >
+                Male
+            </label>
+            <label for="female">
+                <input style="width: 20px; height:10px;"  type="radio" name="gender" id="female" value="Female">
+                Female
+            </label>
+        </div>
+        <br>
+        <div class="my-10 programming">
+            <label for="programming" >Which Programming do you know?</label> <br><br>
+            <label for="laravel">
+                <input style="width: 20px; height:10px;"   type="checkbox" name="programming" id="laravel">
+                Laravel
+            </label>
+            <label for="js">
+                <input style="width: 20px; height:10px;"   type="checkbox" name="programming" id="js">
+                Javascript
+            </label>
+            <label for="java">
+                <input style="width: 20px; height:10px;"   type="checkbox" name="programming" id="java">
+                Java
+            </label>
+            <label for="php">
+                <input style="width: 20px; height:10px;"   type="checkbox" name="programming" id="php">
+                PHP
+            </label>
+            <label for="vbnet">
+                <input style="width: 20px; height:10px;"   type="checkbox" name="programming" id="vbnet">
+                VB.NET
+            </label>
+        </div>
+        <br>
+        <div class="my-10">
+            <label for="comment">Comments:</label>
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
