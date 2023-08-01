@@ -61,6 +61,16 @@
         .gender{
 
         }
+        .btn{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -84,33 +94,46 @@
             <label for="message">Message:</label>
             <textarea name="message" id="" cols="30" rows="10"></textarea>
         </div>
-        <!-- submit button -->
-        <input type="submit" value="Submit">
+        <!-- input submit button -->
+        <input class='btn' type="submit" value="Submit">
     </form>
+
+<!--     Login Form -->
     <form class="login-form" action="#" method="post">
+<!--         Login Header -->
         <h1>Login</h1>
+
+<!--         Input username -->
         <div class="my-10">
             <label for="username">Username:</label>
             <input type="text" name="username" id="">
         </div>
+<!--         Input Password -->
         <div class="my-10">
             <label for="password">Password:</label>
             <input type="text" name="password" id="">
         </div>
-        <input type="submit" value="Login">
+<!--         Input submit Login Button -->
+        <input  class='btn' type="submit" value="Login">
     </form>
 
+<!--     Survey Form -->
     <form class="survey-form" action="#" method="post">
+<!--         Survey Header -->
         <h1>Survey</h1>
+
+<!--         Input name -->
         <div class="my-10">
             <label for="name">Name:</label>
             <input type="text" name="name" id="">
         </div>
+<!--         Input Age -->
         <div class="my-10">
             <label for="age">Age:</label>
             <input type="number" name="age" id="">
         </div>
         <br>
+<!--         Input Gender -->
         <div class="my-10 gender">
             <label for="gender">Gender:</label>
             <label for="male">
@@ -123,6 +146,7 @@
             </label>
         </div>
         <br>
+<!--         Input Programming Checkbox -->
         <div class="my-10 programming">
             <label for="programming" >Which Programming do you know?</label> <br><br>
             <label for="laravel">
@@ -147,11 +171,13 @@
             </label>
         </div>
         <br>
+<!--         textarea comments -->
         <div class="my-10">
             <label for="comment">Comments:</label>
             <textarea name="comment" id="" cols="30" rows="10"></textarea>
         </div>
-        <input type="submit" value="Submit">
+<!--         Input Submit Button -->
+        <input  class='btn' type="submit" value="Submit">
     </form>
 </body>
 </html>
